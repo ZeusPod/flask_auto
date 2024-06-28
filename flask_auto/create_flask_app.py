@@ -2,11 +2,15 @@ import os
 import subprocess
 import sys
 import platform
+import colorama
+
 
 def create_virtualenv(project_path):
+    print('Creating virtual environment...', colorama.Fore.CYAN)
     subprocess.run(['python', '-m', 'venv', os.path.join(project_path, 'venv')])
 
 def install_dependencies(project_path):
+    print('Installing dependencies...', colorama.Fore.CYAN)
     if platform.system() == 'Windows':
         pip_executable = os.path.join(project_path, 'venv', 'Scripts', 'pip')
     else:
@@ -23,6 +27,7 @@ def install_dependencies(project_path):
         f.write(result.stdout)
 
 def create_folder_structure(project_path):
+    print('Creating folder structure...', colorama.Fore.GREEN)
     os.makedirs(os.path.join(project_path, 'app', 'models'), exist_ok=True)
     os.makedirs(os.path.join(project_path, 'app', 'views'), exist_ok=True)
     os.makedirs(os.path.join(project_path, 'app', 'controllers'), exist_ok=True)
@@ -30,6 +35,7 @@ def create_folder_structure(project_path):
     os.makedirs(os.path.join(project_path, 'app', 'utils'), exist_ok=True)
 
 def create_init_files(project_path):
+    print('Creating init files...', colorama.Fore.YELLOW)
     open(os.path.join(project_path, 'app', '__init__.py'), 'w').close()
     open(os.path.join(project_path, 'app', 'models', '__init__.py'), 'w').close()
     open(os.path.join(project_path, 'app', 'views', '__init__.py'), 'w').close()
@@ -74,6 +80,7 @@ def create_app():
         init_file.write(init_content)
 
 def create_gitignore_file(project_path):
+    print('Creating .gitignore file...', colorama.Fore.RED)
     gitignore_content = '''# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -206,6 +213,7 @@ cython_debug/
         gitignore_file.write(gitignore_content)
 
 def create_docker_files(project_path):
+    print('Creating Dockerfiles...', colorama.Fore.BLUE)
     dockerfile_content = '''# Utiliza una imagen base oficial de Python
 FROM python:3.8-slim-buster
 
@@ -275,6 +283,6 @@ def main():
     create_dotenv_file(project_path)
 
     print(f'Flask project "{project_name}" created successfully in {destination_directory}.')
-
+    print('Happy coding!', colorama.Fore.GREEN)
 if __name__ == "__main__":
     main()

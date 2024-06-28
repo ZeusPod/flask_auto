@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: flask_auto
-Version: 0.2.0
+Version: 0.2.1
 Summary: A simple Flask project generator
 Home-page: https://github.com/ZeusPod/flask_auto
 Author: Jose Luis Morales
@@ -78,21 +78,32 @@ my_flask_project/
 â””â”€â”€ .env
 
 
-Detalles de los Archivos Generados
-app/: Contiene la aplicaciÃ³n Flask.
-models/: Carpeta para definir los modelos de la base de datos.
-views/: Carpeta para las vistas de la aplicaciÃ³n.
-controllers/: Carpeta para los controladores de la aplicaciÃ³n.
-templates/: Carpeta para las plantillas HTML.
-utils/: Carpeta para utilidades y funciones auxiliares.
-venv/: Entorno virtual para la instalaciÃ³n de dependencias.
-requirements.txt: Archivo con las dependencias de la aplicaciÃ³n.
-run.py: Script principal para ejecutar la aplicaciÃ³n.
-.gitignore: Archivo para excluir ciertos archivos y carpetas del control de versiones.
-Dockerfile: Archivo de configuraciÃ³n para Docker.
+Detalles de los Archivos Generados: 
+
+- app/: Contiene la aplicaciÃ³n Flask.
+
+- models/: Carpeta para definir los modelos de la base de datos.
+
+- views/: Carpeta para las vistas de la aplicaciÃ³n.
+
+- controllers/: Carpeta para los controladores de la aplicaciÃ³n.
+
+- templates/: Carpeta para las plantillas HTML.
+
+- utils/: Carpeta para utilidades y funciones auxiliares.
+
+- venv/: Entorno virtual para la instalaciÃ³n de dependencias.
+
+- requirements.txt: Archivo con las dependencias de la aplicaciÃ³n.
+- run.py: Script principal para ejecutar la aplicaciÃ³n.
+
+- .gitignore: Archivo para excluir ciertos archivos y carpetas del control de versiones.
+
+- Dockerfile: Archivo de configuraciÃ³n para Docker.
 .dockerignore: Archivo para excluir ciertos archivos y carpetas de la imagen de Docker.
-.env: Archivo para variables de entorno, como la configuraciÃ³n de la base de datos.
-EjecuciÃ³n del Proyecto
+- .env: Archivo para variables de entorno, como la configuraciÃ³n de la base de datos.
+## EjecuciÃ³n del Proyecto
+
 DespuÃ©s de crear el proyecto, sigue estos pasos para ejecutarlo:
 
 Activa el entorno virtual (si no estÃ¡ ya activado):
@@ -115,7 +126,7 @@ Navega al directorio:
 cd my_flask_project
 
 
-Ejecuta la app: 
+### Ejecuta la app: 
 
 python run.py
 

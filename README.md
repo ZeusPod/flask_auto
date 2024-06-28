@@ -59,21 +59,32 @@ my_flask_project/
 └── .env
 
 
-Detalles de los Archivos Generados
-app/: Contiene la aplicación Flask.
-models/: Carpeta para definir los modelos de la base de datos.
-views/: Carpeta para las vistas de la aplicación.
-controllers/: Carpeta para los controladores de la aplicación.
-templates/: Carpeta para las plantillas HTML.
-utils/: Carpeta para utilidades y funciones auxiliares.
-venv/: Entorno virtual para la instalación de dependencias.
-requirements.txt: Archivo con las dependencias de la aplicación.
-run.py: Script principal para ejecutar la aplicación.
-.gitignore: Archivo para excluir ciertos archivos y carpetas del control de versiones.
-Dockerfile: Archivo de configuración para Docker.
+Detalles de los Archivos Generados: 
+
+- app/: Contiene la aplicación Flask.
+
+- models/: Carpeta para definir los modelos de la base de datos.
+
+- views/: Carpeta para las vistas de la aplicación.
+
+- controllers/: Carpeta para los controladores de la aplicación.
+
+- templates/: Carpeta para las plantillas HTML.
+
+- utils/: Carpeta para utilidades y funciones auxiliares.
+
+- venv/: Entorno virtual para la instalación de dependencias.
+
+- requirements.txt: Archivo con las dependencias de la aplicación.
+- run.py: Script principal para ejecutar la aplicación.
+
+- .gitignore: Archivo para excluir ciertos archivos y carpetas del control de versiones.
+
+- Dockerfile: Archivo de configuración para Docker.
 .dockerignore: Archivo para excluir ciertos archivos y carpetas de la imagen de Docker.
-.env: Archivo para variables de entorno, como la configuración de la base de datos.
-Ejecución del Proyecto
+- .env: Archivo para variables de entorno, como la configuración de la base de datos.
+## Ejecución del Proyecto
+
 Después de crear el proyecto, sigue estos pasos para ejecutarlo:
 
 Activa el entorno virtual (si no está ya activado):
@@ -96,7 +107,7 @@ Navega al directorio:
 cd my_flask_project
 
 
-Ejecuta la app: 
+### Ejecuta la app: 
 
 python run.py
 
